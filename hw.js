@@ -24,27 +24,27 @@ t_Tokio = Number();
 
 let temperatures = [temp_Moscow, temp_SPeter, temp_NY, temp_Tokio];
 
-//let min_temp = Math.min(...temperatures);
-//min_t.textContent = min_temp + '°' + 'C';
-
-//let max_temp = Math.max(...temperatures);
-//max_t.textContent = max_temp + '°' + 'C';
-
-let min_temp = temperatures[0];
-let max_temp = temperatures[0];
-
-for (let i = 0; i < temperatures.length; i++) {
-    if(temperatures[i] < min_temp) {
-        min_temp = temperatures[i]
-    }
-
-    if(temperatures[i] > max_temp) {
-        max_temp = temperatures[i]
-    }
-}
-
+let min_temp = Math.min(...temperatures);
 min_t.textContent = min_temp + '°' + 'C';
-max_t.textContent = max_temp + '°' + 'C'; 
+
+let max_temp = Math.max(...temperatures);
+max_t.textContent = max_temp + '°' + 'C';
+
+//let min_temp = temperatures[0];
+//let max_temp = temperatures[0];
+
+//for (let i = 0; i < temperatures.length; i++) {
+ //   if(temperatures[i] < min_temp) {
+  //      min_temp = temperatures[i]
+  //  }
+
+   // if(temperatures[i] > max_temp) {
+   //     max_temp = temperatures[i]
+    //}
+//}
+
+//min_t.textContent = min_temp + '°' + 'C';
+//max_t.textContent = max_temp + '°' + 'C'; 
 
 
 
